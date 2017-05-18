@@ -11,6 +11,7 @@ using Plugin.Sample.Condition.Policies;
 
 namespace Plugin.Sample.Condition.Conditions
 {
+    [EntityIdentifier("MinTemperatureCondition")]
     public class MinTemperatureCondition : ICartsCondition, ICondition, IMappableRuleEntity 
     {
         public IRuleValue<Decimal> MinimumTemperature { get; set; }
@@ -36,7 +37,7 @@ namespace Plugin.Sample.Condition.Conditions
             WeatherService weatherService = new WeatherService(applicationId);
             var temperature = weatherService.GetCurrentTemperature(city, country).Result;
 
-            return (decimal) temperature.Value;
+            return (decimal) temperature.Max;
         }
     }
 }
