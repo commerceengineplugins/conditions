@@ -19,7 +19,9 @@ The project uses two Commerce Engine concepts: Conditions and Policies.
 The sample uses the [OpenWeatherMap API](https://openweathermap.org/api) which supplies current weather information. They have a free plan which is excellent to use for this sample. You need an API key to use their current weather API. Create a free account and generate an API key.
 
 ## MinTemperatureCondition
-The class `MinTemperatureCondition` implements three interfaces: `ICartsCondition`, `ICondition` and `IMappableRuleEntity`. Commerce Engine automatically adds the condition to the UI based on these interfaces.
+The class `MinTemperatureCondition` implements three interfaces: `ICartsCondition`, `ICondition` and `IMappableRuleEntity`. Commerce Engine automatically adds the condition to the UI based on these interfaces. 
+
+To create a condition you only need to implement ICondition's `Evaluate` method.  
 
 ## WeatherServiceClientPolicy
 You need to supply the engine with the correct API key so the `WeatherService` class can access the OpenWeatherMap API. Of course, you don't want to hard-code this key. 
@@ -34,6 +36,7 @@ To configure a Commerce environment, add the following JSON to the environment f
    	}
 
 
-  
+## Adding the plugin to a project
+To add the plugin to a Commerce Engine just add a reference to it. It's that simple.
 
 
