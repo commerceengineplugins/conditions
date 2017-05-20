@@ -19,10 +19,19 @@ The project uses two Commerce Engine concepts: Conditions and Policies.
 The sample uses the [OpenWeatherMap API](https://openweathermap.org/api) which supplies current weather information. They have a free plan which is excellent to use for this sample. You need an API key to use their current weather API. Create a free account and generate an API key.
 
 ## MinTemperatureCondition
-The class _MinTemperatureCondition_ implements three interfaces: _ICartsCondition_, _ICondition_ and _IMappableRuleEntity_. Commerce Engine automatically adds the condition to the UI based on these interfaces.
+The class `MinTemperatureCondition` implements three interfaces: `ICartsCondition`, `ICondition` and `IMappableRuleEntity`. Commerce Engine automatically adds the condition to the UI based on these interfaces.
 
 ## WeatherServiceClientPolicy
+You need to supply the engine with the correct API key so the `WeatherService` class can access the OpenWeatherMap API. Of course, you don't want to hard-code this key. 
 
+You can use a policy to configure the API Key for each environment. The `WeatherServiceClientPolicy` is a simple class derived from `Policy`. It contains one property `ApplicationId` that contains the API key you get from OpenWeatherMap.
+
+To configure a Commerce environment, add the following JSON to the environment file:
+
+	{
+        "$type": "Plugin.Sample.Condition.Policies.WeatherServiceClientPolicy, Plugin.Sample.Condition",
+        "ApplicationId": "<your application id>"
+   	}
 
 
   
