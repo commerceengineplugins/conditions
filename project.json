@@ -25,8 +25,6 @@
   "dependencies": {
     "Newtonsoft.Json": "9.0.1",
     "OpenWeatherMap.Net": "1.0.0",
-    "RestSharp": "105.2.3",
-    "SendGrid.CSharp.HTTP.Client": "3.3.0",
     "Sitecore.Commerce.Core": "1.0.*",
     "Sitecore.Commerce.Plugin.Carts": "1.0.2301",
     "Sitecore.Framework.Rules": "1.1.12"
