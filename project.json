@@ -1,9 +1,9 @@
 {
     "version":  "0.0.1",
-    "description":  "Sitecore Commerce Plugin Sample Class Library",
-    "copyright":  "Â© 2017 Sitecore Corporation A/S. All rights reserved. SitecoreÂ® is a registered trademark of Sitecore Corporation A/S.",
+    "description":  "Sample Plugin for Sitecore Commerce",
+    "copyright":  "Erwin Werkman",
     "authors":  [
-                    "Sitecore"
+                    "Erwin Werkman"
                 ],
     "packOptions":  {
                         "summary":  "This package contains a Sample Class Library plugin for the Sitecore Commerce Engine.",
@@ -16,11 +16,7 @@
                                  ],
                         "owners":  [
                                        "Sitecore Corporation A/S"
-                                   ],
-                        "releaseNotes":  "release notes",
-                        "iconUrl":  "http://www.sitecore.net/favicon.ico",
-                        "projectUrl":  "http://www.sitecore.net/",
-                        "licenseUrl":  "http://www.sitecore.net/platform/pricing.aspx"
+                                   ]
                     },
   "dependencies": {
     "Newtonsoft.Json": "9.0.1",
