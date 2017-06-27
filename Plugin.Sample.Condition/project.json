@@ -15,13 +15,13 @@
                                      "Example"
                                  ],
                         "owners":  [
-                                       "Sitecore Corporation A/S"
+                                       "Erwin Werkman, CommerceEnginePlugins.com"
                                    ]
                     },
   "dependencies": {
     "Newtonsoft.Json": "9.0.1",
     "OpenWeatherMap.Net": "1.0.0",
-    "Sitecore.Commerce.Core": "1.0.*",
+    "Sitecore.Commerce.Core": "1.0.2301",
     "Sitecore.Commerce.Plugin.Carts": "1.0.2301",
     "Sitecore.Framework.Rules": "1.1.12"
   },
@@ -33,7 +33,6 @@
     "configurations":  {
                            "Release":  {
                                            "buildOptions":  {
-                                                                "compile":  "../Shared/VersionInfo.cs",
                                                                 "xmlDoc":  true,
                                                                 "warningsAsErrors":  true,
                                                                 "optimize":  true
